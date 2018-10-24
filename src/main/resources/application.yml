@@ -1,0 +1,20 @@
+server:
+  port: 9809
+
+
+spring:
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+
+work:
+  queue:
+      input: dbsync-in
+      deadletter: dlq
+    
+
+#Propiedades de  configuracion para el Message Broker
+jms:
+  cache:
+    size: 10
